@@ -3,17 +3,17 @@ import run from "aocrunner";
 const parseInput = (rawInput: string) => rawInput.split("\n").map(line => line.split(" "));
 
 
-let scoreValues: number[] = [];
+let scoreValues: any = [];
 scoreValues["win"] = 6;
 scoreValues["draw"] = 3;
 scoreValues["loss"] = 0;
 
-let shapeValues: number[] = [];
+let shapeValues: any = [];
 shapeValues["rock"] = 1;
 shapeValues["paper"] = 2;
 shapeValues["scissors"] = 3;
 
-let playerInput: string[] = [];
+let playerInput: any = [];
 playerInput["A"] = "rock";
 playerInput["B"] = "paper";
 playerInput["C"] = "scissors";
@@ -53,7 +53,7 @@ const part1 = (rawInput: string) => {
     return score;
 };
 
-let result: string[] = [];
+let result: any = [];
 result["X"] = "loss";
 result["Y"] = "draw";
 result["Z"] = "win";
